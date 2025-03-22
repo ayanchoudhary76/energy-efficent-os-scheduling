@@ -5,13 +5,21 @@
 
 int main()
 {
-    std::vector<Process> processes = {
-        {1, 0, 6},
-        {2, 1, 8},
-        {3, 2, 7},
-        {4, 3, 3}};
+    int num_processes;
+    std::vector<Process> processes;
 
-    Logger::log("Initializing SJF Scheduler...");
+    std::cout << "Enter the number of processes: ";
+    std::cin >> num_processes;
+
+    for (int i = 0; i < num_processes; i++)
+    {
+        int id, arrival_time, burst_time;
+        std::cout << "Enter Process ID, Arrival Time, and Burst Time for Process " << (i + 1) << ": ";
+        std::cin >> id >> arrival_time >> burst_time;
+        processes.push_back({id, arrival_time, burst_time});
+    }
+
+    Logger::log("Initializing SJF Scheduler with user-input processes...");
 
     SJFScheduler sjf;
     sjf.schedule(processes);
