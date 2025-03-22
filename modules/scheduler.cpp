@@ -8,8 +8,10 @@ void sjfscheduler::schedule(vector<process> &p)
         return a.burst_time < b.burst_time;
     });
     cout<<"Scheduling using SJF: "<<endl;
+    int current_time = 0;
     for (auto &i : p)
     {
         cout << "Process ID: " << i.id << " Arrival Time: " << i.arr_time << " Burst Time: " << i.burst_time << endl;
+        current_time += i.burst_time;
     }
 }
