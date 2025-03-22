@@ -1,17 +1,19 @@
 #include "logger.h"
+#include <fstream>
+#include <iostream>
 
-void Logger::log(const string message)
+void Logger::log(const std::string message)
 {
-    cout << "[LOG] " << message << endl;
+    std::cout << "[LOG] " << message << std::endl;
 
-    ofstream logFile("log.txt", ios::app);
+    std::ofstream logFile("log.txt", std::ios::app);
     if (logFile.is_open())
     {
-        logFile << "[LOG] " << message << endl;
+        logFile << "[LOG] " << message << std::endl;
         logFile.close();
     }
     else
     {
-        cout << "Error: Unable to open log file" << endl;
+        std::cerr << "[ERROR] Unable to open log file" << std::endl;
     }
 }

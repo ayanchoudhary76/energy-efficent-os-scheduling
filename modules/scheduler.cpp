@@ -6,7 +6,10 @@
 void SJFScheduler::schedule(std::vector<Process> &processes)
 {
     std::sort(processes.begin(), processes.end(), [](Process a, Process b)
-              { return a.burst_time < b.burst_time; });
+              {
+        if (a.arrival_time == b.arrival_time)
+            return a.burst_time < b.burst_time;
+        return a.arrival_time < b.arrival_time; });
 
     Logger::log("Starting SJF Scheduling...");
     int current_time = 0;
@@ -19,6 +22,11 @@ void SJFScheduler::schedule(std::vector<Process> &processes)
 
     for (auto &p : processes)
     {
+        if (current_time < p.arrival_time)
+        {
+            current_time = p.arrival_time; // Fix: Ensure CPU waits if needed
+        }
+
         int energy_used = p.burst_time * 5;
         total_energy += energy_used;
         int completion_time = current_time + p.burst_time;
@@ -33,6 +41,7 @@ void SJFScheduler::schedule(std::vector<Process> &processes)
 
         current_time = completion_time;
     }
+
     std::cout << "-----------------------------------------\n";
     std::cout << "Total Energy Consumption: " << total_energy << " units\n";
     Logger::log("Total Energy Consumption: " + std::to_string(total_energy) + " units");
