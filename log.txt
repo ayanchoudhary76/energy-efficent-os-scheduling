@@ -24,3 +24,23 @@
 [LOG] Average Turnaround Time: 14.750000
 [LOG] Average Waiting Time: 8.750000
 [LOG] SJF Scheduling Completed.
+[LOG] Initializing SJF Scheduler...
+[LOG] Starting SJF Scheduling...
+[LOG] Process 1 executed, CT: 6, TAT: 6, WT: 0, Energy Used: 30
+[LOG] Process 2 executed, CT: 14, TAT: 13, WT: 5, Energy Used: 40
+[LOG] Process 3 executed, CT: 21, TAT: 19, WT: 12, Energy Used: 35
+[LOG] Process 4 executed, CT: 24, TAT: 21, WT: 18, Energy Used: 15
+[LOG] Total Energy Consumption: 120 units
+[LOG] Average Turnaround Time: 14.750000
+[LOG] Average Waiting Time: 8.750000
+[LOG] SJF Scheduling Completed.
+[LOG] Initializing SJF Scheduler...
+[LOG] Starting SJF Scheduling...
+[LOG] Process 1 executed, CT: 6, TAT: 6, WT: 0, Energy Used: 30
+[LOG] Process 2 executed, CT: 14, TAT: 13, WT: 5, Energy Used: 40
+[LOG] Process 3 executed, CT: 21, TAT: 19, WT: 12, Energy Used: 35
+[LOG] Process 4 executed, CT: 24, TAT: 21, WT: 18, Energy Used: 15
+[LOG] Total Energy Consumption: 120 units
+[LOG] Average Turnaround Time: 14.750000
+[LOG] Average Waiting Time: 8.750000
+[LOG] SJF Scheduling Completed.

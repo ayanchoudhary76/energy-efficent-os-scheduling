@@ -2,6 +2,7 @@
 #include "../utils/logger.h"
 #include <iostream>
 #include <algorithm>
+#include <vector>
 
 void SJFScheduler::schedule(std::vector<Process> &processes)
 {
@@ -17,6 +18,8 @@ void SJFScheduler::schedule(std::vector<Process> &processes)
     int total_tat = 0;
     int total_wt = 0;
     int n = processes.size();
+
+    std::vector<std::pair<int, int>> gantt_chart;
 
     std::cout << "\nProcess Execution Order:\n";
     std::cout << "-------------------------------------------------------------------\n";
@@ -36,9 +39,10 @@ void SJFScheduler::schedule(std::vector<Process> &processes)
 
         total_tat += tat;
         total_wt += wt;
-
         int energy_used = p.burst_time * 5;
         total_energy += energy_used;
+
+        gantt_chart.push_back({p.id, current_time});
 
         std::cout << "|    P" << p.id << "    |      " << p.arrival_time
                   << "       |     " << p.burst_time
@@ -65,4 +69,18 @@ void SJFScheduler::schedule(std::vector<Process> &processes)
     Logger::log("Total Energy Consumption: " + std::to_string(total_energy) + " units");
     Logger::log("Average Turnaround Time: " + std::to_string(avg_tat));
     Logger::log("Average Waiting Time: " + std::to_string(avg_wt));
+
+    std::cout << "\nGantt Chart:\n";
+    std::cout << "|";
+    for (const auto &entry : gantt_chart)
+    {
+        std::cout << " P" << entry.first << " |";
+    }
+    std::cout << "\n";
+
+    for (const auto &entry : gantt_chart)
+    {
+        std::cout << entry.second << "    ";
+    }
+    std::cout << current_time << "\n";
 }
