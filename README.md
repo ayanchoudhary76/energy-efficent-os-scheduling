@@ -5,7 +5,8 @@ This project implements a **Shortest Job First (SJF) CPU scheduling algorithm** 
 ---
 
 ## 📌 Project Overview
-- **Algorithm Used**: Shortest Job First (SJF) (Non-Preemptive)  
+
+- **Algorithm Used**: Shortest Job First (SJF) (Non-Preemptive)
 - **Key Features**:  
   ✔ Implements **SJF CPU Scheduling**  
   ✔ **Gantt Chart Visualization** of scheduled processes  
@@ -16,42 +17,54 @@ This project implements a **Shortest Job First (SJF) CPU scheduling algorithm** 
 
 ## 📂 Project Structure
 
-energy-efficient-os-scheduling
-│── main.cpp
-│── README.md
-│── Makefile (optional)
-│── log.txt (Generated after running the program)
-│── modules
-│   ├── scheduler.h
-│   ├── scheduler.cpp
-│── utils
-│   ├── logger.h
-│   ├── logger.cpp
-
-
----
+energy-efficient-os-scheduling  
+│── main.cpp  
+│── README.md  
+│── Makefile (optional)  
+│── log.txt (Generated after running the program)  
+│── modules  
+│ ├── scheduler.h  
+│ ├── scheduler.cpp  
+│── utils  
+│ ├── logger.h  
+│ ├── logger.cpp
 
 ## 🛠️ Installation & Compilation
+
 ### 🔹 Step 1: Clone the Repository
+
 ```sh
 git clone https://github.com/your-username/energy-efficient-os-scheduling.git
 cd energy-efficient-os-scheduling
+```
 
-🔹 Step 2: Compile the Code
+### 🔹 Step 2: Compile the Code
+
+```sh
 g++ -Iutils -Imodules main.cpp modules/scheduler.cpp utils/logger.cpp -o scheduler.exe
+```
 
-🔹 Step 3: Run the Program
+### 🔹 Step 3: Run the Program
+
+```sh
 ./scheduler.exe
+```
 
-🔹 Step 4: Check Logs
-After running the program, check the log file
+### 🔹 Step 4: Check Logs
+
+After running the program, check the log file:
+
+```sh
 type log.txt
+```
 
+---
 
+## 📊 Expected Output (Console)
 
-📊 Expected Output (Console)
-Scheduled Processes (SJF Order):
+### Scheduled Processes (SJF Order):
 
+```
 -----------------------------------------
 | Process | Arrival Time | Burst Time | Completion Time | Energy Used |
 -----------------------------------------
@@ -61,27 +74,34 @@ Scheduled Processes (SJF Order):
 |    P2   |      1       |     8      |       24        |     40      |
 -----------------------------------------
 Total Energy Consumption: 120 units
+```
 
-Gantt Chart Visualization:
+### Gantt Chart Visualization:
+
+```
 Gantt Chart:
 | P4 | P1 | P3 | P2 |
 0     3     9    16    24
+```
 
+---
 
+## 📑 Logging System (log.txt)
 
-📑 Logging System (log.txt)
-After execution, the  file contains
+After execution, the `log.txt` file contains:
+
+```
 [LOG] Initializing SJF Scheduler...
 [LOG] Process 4 executed, Completion Time: 3, Energy Used: 15
 [LOG] Process 1 executed, Completion Time: 9, Energy Used: 30
 [LOG] Process 3 executed, Completion Time: 16, Energy Used: 35
 [LOG] Process 2 executed, Completion Time: 24, Energy Used: 40
 [LOG] Total Energy Consumption: 120 units
+```
 
+---
 
-📜 License
-This project is for educational purposes and is licensed under the MIT License.
+## 📩 Author
 
-📩 Author
-Developer: Ayan Choudhary
-GitHub: https://github.com/ayanchoudhary76
+**Developer**: Ayan Choudhary  
+GitHub: [Your GitHub Profile](https://github.com/ayanchoudhary76)
