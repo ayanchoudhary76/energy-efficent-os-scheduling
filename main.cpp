@@ -1,14 +1,21 @@
-#include<iostream>
-#include<vector>
-#include<algorithm>
+#include <iostream>
+#include <vector>
 #include "modules/scheduler.h"
 #include "utils/logger.h"
-using namespace std;
-int main(){
-    vector<process> p = {{1, 0, 5}, {2, 1, 3}, {3, 2, 8}};
-    logger::log("Initializing SJF Scheduler...");
-    sjfscheduler sjf;
-    sjf.schedule(p);
-    logger::log("SJF Scheduler executed successfully");
+
+int main()
+{
+    std::vector<Process> processes = {
+        {1, 0, 6},
+        {2, 1, 8},
+        {3, 2, 7},
+        {4, 3, 3}};
+
+    Logger::log("Initializing SJF Scheduler...");
+
+    SJFScheduler sjf;
+    sjf.schedule(processes);
+
+    Logger::log("SJF Scheduling Completed.");
     return 0;
 }

@@ -1,22 +1,23 @@
 #ifndef SCHEDULER_H
 #define SCHEDULER_H
+
 #include <vector>
-using namespace std;
-struct process
+
+struct Process
 {
-    int id, arr_time, burst_time;
+    int id, arrival_time, burst_time;
 };
 
-class scheduler
+class Scheduler
 {
 public:
-    virtual void schedule(vector<process> &p) = 0;
+    virtual void schedule(std::vector<Process> &processes) = 0;
 };
 
-class sjfscheduler : public scheduler
+class SJFScheduler : public Scheduler
 {
 public:
-    void schedule(vector<process> &p) override;
+    void schedule(std::vector<Process> &processes) override;
 };
 
 #endif

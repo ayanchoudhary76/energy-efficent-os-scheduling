@@ -1,0 +1,8 @@
+[LOG] Initializing SJF Scheduler...
+[LOG] Starting SJF Scheduling...
+[LOG] Process 4 executed, Completion Time: 3, Energy Used: 15
+[LOG] Process 1 executed, Completion Time: 9, Energy Used: 30
+[LOG] Process 3 executed, Completion Time: 16, Energy Used: 35
+[LOG] Process 2 executed, Completion Time: 24, Energy Used: 40
+[LOG] Total Energy Consumption: 120 units
+[LOG] SJF Scheduling Completed.
