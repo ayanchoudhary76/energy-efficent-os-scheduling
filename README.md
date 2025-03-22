@@ -104,4 +104,4 @@ After execution, the `log.txt` file contains:
 ## 📩 Author
 
 **Developer**: Ayan Choudhary  
-GitHub: [Your GitHub Profile](https://github.com/ayanchoudhary76)
+GitHub: [My GitHub Profile](https://github.com/ayanchoudhary76)
