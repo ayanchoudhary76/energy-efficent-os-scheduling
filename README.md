@@ -130,5 +130,5 @@ After execution, the `log.txt` file contains:
 
 - **Developer**: Ayan Choudhary , Suraj Vishwakarma , Leena Mishra
 - **GitHub**: [Ayan Choudhary](https://github.com/ayanchoudhary76)
-- **GitHub**: [Suraj vishwakarma](https://github.com/smartcraze)
+- **GitHub**: [Suraj Vishwakarma](https://github.com/smartcraze)
 - **GitHub**: [Leena Mishra](https://github.com/Leenamishra25)
