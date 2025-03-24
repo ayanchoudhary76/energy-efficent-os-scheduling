@@ -23,11 +23,13 @@ This project implements a **Preemptive Shortest Job First (SJF) CPU scheduling a
 energy-efficent-os-scheduling
 │── main.cpp
 │── README.md
-│── Makefile (optional)
+│── Makefile 
 │── log.txt (Generated after running the program)
 │── modules
 │ ├── scheduler.h
 │ ├── scheduler.cpp
+│ ├── gantt_chart.h
+│ ├── gantt_chart.cpp
 │── utils
 │ ├── logger.h
 │ ├── logger.cpp
@@ -108,18 +110,18 @@ Gantt Chart:
 After execution, the `log.txt` file contains:
 
 ```
-[LOG] Starting Preemptive SJF Scheduling...
-[LOG] Executing Process P1 at time 0
-[LOG] Executing Process P2 at time 1
-[LOG] Executing Process P2 at time 2
-[LOG] Executing Process P2 at time 3
-[LOG] Executing Process P1 at time 4
-[LOG] Executing Process P5 at time 8
-[LOG] Executing Process P4 at time 12
-[LOG] Executing Process P3 at time 18
-[LOG] Total Energy Consumption: 130 units
-[LOG] Average Turnaround Time: 12.2
-[LOG] Average Waiting Time: 7.0
+[LOG 2025-03-24 12:00:00] Starting Preemptive SJF Scheduling...
+[LOG 2025-03-24 12:00:00] Executing Process P1 at time 0
+[LOG 2025-03-24 12:00:00] Executing Process P2 at time 1
+[LOG 2025-03-24 12:00:00] Executing Process P2 at time 2
+[LOG 2025-03-24 12:00:00] Executing Process P2 at time 3
+[LOG 2025-03-24 12:00:00] Executing Process P1 at time 4
+[LOG 2025-03-24 12:00:00] Executing Process P5 at time 8
+[LOG 2025-03-24 12:00:00] Executing Process P4 at time 12
+[LOG 2025-03-24 12:00:00] Executing Process P3 at time 18
+[LOG 2025-03-24 12:00:00] Total Energy Consumption: 130 units
+[LOG 2025-03-24 12:00:00] Average Turnaround Time: 12.2
+[LOG 2025-03-24 12:00:00] Average Waiting Time: 7.0
 ```
 ---
 
