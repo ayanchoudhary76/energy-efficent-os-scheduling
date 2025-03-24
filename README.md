@@ -18,6 +18,7 @@ This project implements a **Preemptive Shortest Job First (SJF) CPU scheduling a
 ---
 
 ## 📂 Project Structure
+
 ```
 energy-efficent-os-scheduling
 │── main.cpp
@@ -31,6 +32,7 @@ energy-efficent-os-scheduling
 │ ├── logger.h
 │ ├── logger.cpp
 ```
+
 ---
 
 ## 🛠️ Installation & Compilation
@@ -126,5 +128,7 @@ After execution, the `log.txt` file contains:
 
 ## 📩 Author
 
-- **Developer**: Ayan Choudhary
-- **GitHub**: [My GitHub Profile](https://github.com/your-username)
+- **Developer**: Ayan Choudhary , Suraj Vishwakarma , Leena mishra
+- **GitHub**: [Ayan Choudhary](https://github.com/ayanchoudhary76)
+- **GitHub**: [Suraj vishwakarma](https://github.com/smartcraze)
+- **GitHub**: [Leena Mishra](https://github.com/usrname)
