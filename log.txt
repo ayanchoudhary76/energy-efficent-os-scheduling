@@ -103,3 +103,21 @@
 [LOG 2025-03-23 00:10:07] Average Turnaround Time: 6.200000
 [LOG 2025-03-23 00:10:07] Average Waiting Time: 2.600000
 [LOG 2025-03-23 00:10:07] SJF Scheduling Completed.
+[LOG 2025-03-24 14:30:04] Initializing SJF Scheduler with user-input processes...
+[LOG 2025-03-24 14:30:04] Starting Preemptive SJF Scheduling...
+[LOG 2025-03-24 14:30:04] Executing Process P1 at time 0
+[LOG 2025-03-24 14:30:04] Executing Process P2 at time 1
+[LOG 2025-03-24 14:30:04] Executing Process P2 at time 2
+[LOG 2025-03-24 14:30:04] Executing Process P3 at time 3
+[LOG 2025-03-24 14:30:04] Executing Process P1 at time 4
+[LOG 2025-03-24 14:30:04] Executing Process P4 at time 5
+[LOG 2025-03-24 14:30:04] Executing Process P1 at time 6
+[LOG 2025-03-24 14:30:04] Executing Process P1 at time 7
+[LOG 2025-03-24 14:30:04] Process 1 executed, CT: 8, TAT: 8, WT: 4
+[LOG 2025-03-24 14:30:04] Process 2 executed, CT: 3, TAT: 2, WT: 0
+[LOG 2025-03-24 14:30:04] Process 3 executed, CT: 4, TAT: 2, WT: 1
+[LOG 2025-03-24 14:30:04] Process 4 executed, CT: 6, TAT: 1, WT: 0
+[LOG 2025-03-24 14:30:04] Total Energy Consumption: 40 units
+[LOG 2025-03-24 14:30:04] Average Turnaround Time: 3.250000
+[LOG 2025-03-24 14:30:04] Average Waiting Time: 1.250000
+[LOG 2025-03-24 14:30:04] SJF Scheduling Completed.

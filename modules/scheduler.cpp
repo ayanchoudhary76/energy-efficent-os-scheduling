@@ -1,4 +1,5 @@
 #include "scheduler.h"
+#include "gantt_chart.h"
 #include "../utils/logger.h"
 #include <iostream>
 #include <vector>
@@ -101,17 +102,5 @@ void SJFScheduler::schedule(std::vector<Process> &processes)
     Logger::log("Average Turnaround Time: " + std::to_string(avg_tat));
     Logger::log("Average Waiting Time: " + std::to_string(avg_wt));
 
-    std::cout << "\nGantt Chart:\n";
-    std::cout << "|";
-    for (const auto &entry : gantt_chart)
-    {
-        std::cout << " P" << entry.first << " |";
-    }
-    std::cout << "\n";
-
-    for (const auto &entry : gantt_chart)
-    {
-        std::cout << entry.second << "    ";
-    }
-    std::cout << current_time << "\n";
+    GanttChart::display(gantt_chart, current_time);
 }
