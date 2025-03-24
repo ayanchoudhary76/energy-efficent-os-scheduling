@@ -17,5 +17,3 @@ void GanttChart::display(const std::vector<std::pair<int, int>> &gantt_chart, in
     }
     std::cout << current_time << "\n";
 }
-
-
