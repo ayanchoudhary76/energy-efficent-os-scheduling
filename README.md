@@ -123,7 +123,6 @@ After execution, the `log.txt` file contains:
 [LOG] Average Turnaround Time: 12.2
 [LOG] Average Waiting Time: 7.0
 ```
-
 ---
 
 ## 📩 Author
