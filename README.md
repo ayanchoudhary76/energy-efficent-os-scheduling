@@ -75,9 +75,7 @@ Enter Process ID, Arrival Time, and Burst Time for Process 2: 2 1 3
 Enter Process ID, Arrival Time, and Burst Time for Process 3: 3 2 8
 Enter Process ID, Arrival Time, and Burst Time for Process 4: 4 3 6
 Enter Process ID, Arrival Time, and Burst Time for Process 5: 5 4 4
-```
 
-```
 Process Execution Order:
 -------------------------------------------------------------------
 | Process | Arrival Time | Burst Time | Completion Time | TAT | WT |
