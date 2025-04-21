@@ -197,3 +197,38 @@
 [LOG 2025-04-18 14:50:45] Average Turnaround Time: 4.600000
 [LOG 2025-04-18 14:50:45] Average Waiting Time: 2.400000
 [LOG 2025-04-18 14:50:45] SJF Scheduling Completed.
+[LOG 2025-04-21 16:13:36] Initializing SJF Scheduler with user-input processes...
+[LOG 2025-04-21 16:13:36] Starting Preemptive SJF Scheduling...
+[LOG 2025-04-21 16:13:36] Executing Process P0 at time 0
+[LOG 2025-04-21 16:13:36] Executing Process P1 at time 1
+[LOG 2025-04-21 16:13:36] Executing Process P0 at time 2
+[LOG 2025-04-21 16:13:36] Executing Process P0 at time 3
+[LOG 2025-04-21 16:13:36] Executing Process P0 at time 4
+[LOG 2025-04-21 16:13:36] Process 0 executed, CT: 2, TAT: 2, WT: -2
+[LOG 2025-04-21 16:13:36] Process 1 executed, CT: 0, TAT: -1, WT: -2
+[LOG 2025-04-21 16:13:36] Total Energy Consumption: 25 units
+[LOG 2025-04-21 16:13:36] Average Turnaround Time: 0.500000
+[LOG 2025-04-21 16:13:36] Average Waiting Time: -2.000000
+[LOG 2025-04-21 16:13:36] SJF Scheduling Completed.
+[LOG 2025-04-21 16:14:39] Initializing SJF Scheduler with user-input processes...
+[LOG 2025-04-21 16:14:39] Starting Preemptive SJF Scheduling...
+[LOG 2025-04-21 16:14:39] Executing Process P0 at time 1
+[LOG 2025-04-21 16:14:39] Executing Process P0 at time 2
+[LOG 2025-04-21 16:14:39] Executing Process P0 at time 3
+[LOG 2025-04-21 16:14:39] Process 0 executed, CT: 0, TAT: -1, WT: -2
+[LOG 2025-04-21 16:14:39] Process 0 executed, CT: 0, TAT: -2, WT: -3
+[LOG 2025-04-21 16:14:39] Process 0 executed, CT: 0, TAT: -3, WT: -4
+[LOG 2025-04-21 16:14:39] Total Energy Consumption: 15 units
+[LOG 2025-04-21 16:14:39] Average Turnaround Time: -2.000000
+[LOG 2025-04-21 16:14:39] Average Waiting Time: -3.000000
+[LOG 2025-04-21 16:14:39] SJF Scheduling Completed.
+[LOG 2025-04-21 16:50:00] Initializing SJF Scheduler with user-input processes...
+[LOG 2025-04-21 16:50:00] Starting Preemptive SJF Scheduling...
+[LOG 2025-04-21 16:50:00] Executing Process P1 at time 1
+[LOG 2025-04-21 16:50:00] Executing Process P3 at time 5
+[LOG 2025-04-21 16:50:00] Executing Process P3 at time 6
+[LOG 2025-04-21 16:50:00] Process 1 executed, CT: 2, TAT: 1, WT: 0
+[LOG 2025-04-21 16:50:00] Process 3 executed, CT: 0, TAT: -5, WT: -7
+[LOG 2025-04-21 16:50:00] Total Energy Consumption: 15 units
+[LOG 2025-04-21 16:50:00] Average Turnaround Time: -2.000000
+[LOG 2025-04-21 16:50:00] Average Waiting Time: -3.500000
