@@ -84,7 +84,7 @@ Process Execution Order:
 -------------------------------------------------------------------
 |    P2   |      1       |     3      |       4        |  3  |  0  |
 |    P5   |      4       |     4      |       8        |  4  |  0  |
-|    P1   |      0       |     5      |       13       | 13  | 8  |
+|    P1   |      0       |     5      |       13       | 13  |  8  |
 |    P4   |      3       |     6      |       19       | 16  | 10  |
 |    P3   |      2       |     8      |       27       | 25  | 17  |
 -------------------------------------------------------------------
@@ -127,7 +127,7 @@ After execution, the `log.txt` file contains:
 
 ## 📩 Author
 
-- **Developer**: Ayan Choudhary , Suraj Vishwakarma , Leena Mishra
+- **Developer**: Ayan Choudhary , Suraj Vishwakarma , Leena Mishra , Tushar
 - **GitHub**: [Ayan Choudhary](https://github.com/ayanchoudhary76)
 - **GitHub**: [Suraj Vishwakarma](https://github.com/smartcraze)
 - **GitHub**: [Leena Mishra](https://github.com/Leenamishra25)
