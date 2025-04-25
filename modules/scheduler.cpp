@@ -10,11 +10,18 @@ void SJFScheduler::schedule(std::vector<Process> &processes)
 {
     auto cmp = [](const Process &a, const Process &b)
     { return a.burst_time > b.burst_time; };
+
     std::priority_queue<Process, std::vector<Process>, decltype(cmp)> pq(cmp);
 
     int current_time = 0, total_energy = 0;
     int index = 0, n = processes.size();
     std::vector<int> completion_time(n, 0), tat(n, 0), wt(n, 0);
+    std::vector<int> original_burst(n);
+    for (int i = 0; i < n; i++)
+    {
+        original_burst[i] = processes[i].burst_time;
+    }
+
     std::vector<std::pair<int, int>> gantt_chart;
 
     std::sort(processes.begin(), processes.end(), [](Process a, Process b)
@@ -43,13 +50,29 @@ void SJFScheduler::schedule(std::vector<Process> &processes)
             p.burst_time--;
             total_energy += 5;
 
+            for (auto &proc : processes)
+            {
+                if (proc.id == p.id)
+                {
+                    proc.burst_time = p.burst_time;
+                    break;
+                }
+            }
+
             if (p.burst_time > 0)
             {
                 pq.push(p);
             }
             else
             {
-                completion_time[p.id - 1] = current_time + 1;
+                for (int i = 0; i < n; i++)
+                {
+                    if (processes[i].id == p.id)
+                    {
+                        completion_time[i] = current_time + 1;
+                        break;
+                    }
+                }
             }
 
             current_time++;
@@ -63,7 +86,7 @@ void SJFScheduler::schedule(std::vector<Process> &processes)
     for (int i = 0; i < n; i++)
     {
         tat[i] = completion_time[i] - processes[i].arrival_time;
-        wt[i] = tat[i] - processes[i].burst_time;
+        wt[i] = tat[i] - original_burst[i];
     }
 
     float avg_tat = 0, avg_wt = 0;
@@ -83,7 +106,7 @@ void SJFScheduler::schedule(std::vector<Process> &processes)
     for (int i = 0; i < n; i++)
     {
         std::cout << "|    P" << processes[i].id << "    |      " << processes[i].arrival_time
-                  << "       |     " << processes[i].burst_time
+                  << "       |     " << original_burst[i]
                   << "     |       " << completion_time[i]
                   << "       |   " << tat[i]
                   << "  |  " << wt[i] << "  |\n";
